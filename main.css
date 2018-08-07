@@ -1,0 +1,177 @@
+body{
+	font-family: 'Roboto', sans-serif;
+	background-color: #d5d9d4;
+}
+#contact-list{
+	background-color: white;
+	width:440px;
+	height: 600px;
+    max-height:100%;
+	overflow-y:scroll;
+	position: initial;
+	min-width: 440px;
+	position: fixed;
+	max-width: 100%;
+	padding-top: 10px;
+}
+#whatsapp-icon{
+	background-color: #00e676 !important;
+	color: white;
+	font-size: 1.5em;
+}
+
+.box{
+	text-align: center;
+    align-items: center;
+	justify-content: flex-end !important;
+	border: 5px solid black;
+	height: 500px;
+    width: 500px;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color:#1ebea5;
+    color: #fff;
+    font-family: 'Merienda', cursive;
+    padding-bottom: 10px;
+	padding-top: 10px;
+	align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color:#1ebea5;
+}
+/* footer{
+	padding-top: 10px;
+	padding-bottom:10px;
+	color: #fff; 
+    font-size: 2em;
+    display: inherit;
+} */
+.person-img{
+	height: 60px;
+	width: 60px;
+	/* background-image: url( image/d.p-1.jpg); */
+	background-position: center;
+	background-size: cover;
+	background-color: #dde7ed;
+	border-radius: 100px;
+	margin-right: 1em;
+}
+.person-item{
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+	padding: 5px;
+	width: 400px;
+	
+}
+.time{
+	
+	font-size:0.7em;
+	color: rgba(0, 0, 0, 0.6)
+}
+.content-center > * {
+	margin: 0;
+	font-size: 0.8em;
+}
+.after-person-img{
+	display: flex;
+	align-items: flex-start;
+}
+.after-person-img p{
+	margin: 0;
+}
+h4{
+	color: rgba(0, 0, 0, 0.8);
+}
+.name{
+	margin-bottom: 5px ;
+}
+.msg{
+	color: rgba(0, 0, 0, 0.5);
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap; 
+    width: 100%; 
+}
+.msg-container{
+	display:flex;
+
+}
+i{
+	margin-right:5px; 
+}
+
+
+
+
+
+
+
+#box{
+	cursor: pointer;
+    display: flex;;
+    align-items: center;
+	justify-content: center;
+	position: fixed;
+    left: 500px;
+	min-width: 200px;
+	text-align: center;
+	padding: 20px;
+    width: 600px;
+	margin: 1em;
+	border: 5px white;
+	text-align: center;
+}
+#box > * {
+	color:#716d6d;
+}
+#box-details{
+	border: 0;
+	align-items: center;
+}
+#contact-img{
+	width: 150px;
+	height: 150px;
+	border-radius: 3em;
+	background-position: center;
+    background-size: cover;
+}
+#cont-name{
+	color: #716d6d;
+	font-size: 1.50em;
+}
+#cont-status{
+	display: flex;
+	margin-left: 1em;
+}
+.fa-envelope{
+	font-size: 1.50em;
+	color: #904a8f;
+	background-color: white;
+}
+.fa-phone{
+	font-size: 1.50em;
+	color: #3c8105;
+	background-color: white;
+}
+.fa-check{
+	color: #9d9d9d;
+}
+.fa-check-double{
+	color: #69d3fb;
+}
+.fa-clock{
+	color: #9c9c9c;
+}
+
+
+
+
+

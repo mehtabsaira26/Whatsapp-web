@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>WhatsApp Web</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <script src="main.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+  <body onload="initialize()">
+      <header>
+          <h3> <i class="fab fa-whatsapp" id="whatsapp-icon"></i>  WHATSAPP WEB </h3>
+              </header>
+     <section id="contact-list" class="WhatsApp-body">
+      
+       <div id="box">
+      <div id="box-details" class="card">
+          <div id="contact-img"> </div>
+          <div>
+            <h5 id="cont-name" class="card-body"></h5>
+            <p id="cont-phone" class="card-text"></p>
+            <p id="read-email"></p>
+            <p id="cont-status"></p>
+            
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+
+      
+      <!-- <footer>
+          Saira Mehtab <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjY0cHgiIGhlaWdodD0iNjRweCIgdmlld0JveD0iMCAwIDYxMiA2MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDYxMiA2MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPGc+Cgk8ZyBpZD0idGFnLWZhY2VzIj4KCQk8cGF0aCBkPSJNNDMzLjUsMjgwLjVjMTUuMywwLDI1LjUtMTAuMiwyNS41LTI1LjVzLTEwLjItMjUuNS0yNS41LTI1LjVTNDA4LDIzOS43LDQwOCwyNTVTNDE4LjIsMjgwLjUsNDMzLjUsMjgwLjV6IE0zODIuNSw0MDggICAgYzQ4LjQ1LDAsODYuNy0zMy4xNSw5Ni45LTc2LjVIMjg1LjZDMjk1LjgsMzc0Ljg1LDMzNC4wNSw0MDgsMzgyLjUsNDA4eiBNMzMxLjUsMjgwLjVjMTUuMywwLDI1LjUtMTAuMiwyNS41LTI1LjUgICAgcy0xMC4yLTI1LjUtMjUuNS0yNS41UzMwNiwyMzkuNywzMDYsMjU1UzMxNi4yLDI4MC41LDMzMS41LDI4MC41eiBNNTYxLDc2LjVIMTkzLjhjLTE1LjMsMC0zMC42LDcuNjUtNDAuOCwyMC40TDAsMzA2bDE1MywyMDkuMSAgICBjMTAuMiwxMi43NSwyNS41LDIwLjQsNDAuOCwyMC40SDU2MWMyOC4wNSwwLDUxLTIyLjk1LDUxLTUxdi0zNTdDNjEyLDk5LjQ1LDU4OS4wNSw3Ni41LDU2MSw3Ni41eiBNMTAyLDMzMS41ICAgIGMtMTUuMywwLTI1LjUtMTAuMi0yNS41LTI1LjVzMTAuMi0yNS41LDI1LjUtMjUuNXMyNS41LDEwLjIsMjUuNSwyNS41UzExNy4zLDMzMS41LDEwMiwzMzEuNXogTTM4Mi41LDQ1OSAgICBjLTg0LjE1LDAtMTUzLTY4Ljg1LTE1My0xNTNjMC04NC4xNSw2OC44NS0xNTMsMTUzLTE1M2M4NC4xNSwwLDE1Myw2OC44NSwxNTMsMTUzQzUzNS41LDM5MC4xNSw0NjYuNjUsNDU5LDM4Mi41LDQ1OXoiIGZpbGw9IiMwMDAwMDAiLz4KCTwvZz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K" margin: 20px;/>
+       </footer> -->
+    </body>
+</html>
