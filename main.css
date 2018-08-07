@@ -98,7 +98,7 @@ h4{
 	overflow: hidden;
 	text-overflow:ellipsis;
 	white-space: nowrap; 
-    width: 100%; 
+        width: 100%; 
 }
 .msg-container{
 	display:flex;
@@ -139,7 +139,7 @@ i{
 #contact-img{
 	width: 150px;
 	height: 150px;
-	border-radius: 3em;
+	border-radius: 1000px;
 	background-position: center;
     background-size: cover;
 }
